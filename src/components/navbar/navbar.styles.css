@@ -1,0 +1,200 @@
+.nav {
+    background: #fff;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    display: block;
+    position: relative;
+    z-index: 1010;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.nav .nav__inner {
+    display: flex;
+    justify-content: space-between;
+    background: inherit;
+    box-sizing: border-box;
+    height: 65px;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1011;
+}
+
+.nav .nav__logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .nav__logo-wrap {
+    margin: 0 16px 0 0;
+}
+
+img {
+    outline: 1px solid #22746b!important;
+}
+
+.nav .nav__left {
+    flex: 1;
+    min-width: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav .dropdown {
+    font-size: 13px;
+    margin: 0 2px;
+    padding: 10px 0;
+}
+
+.dropup, .dropdown {
+    position: relative;
+}
+
+.nav.nav--desktop .dropdown--topics.dropdown--open-on-hover:hover .dropdown-toggle, .c_header .dropdown--topics.open .dropdown-toggle, .c_header.c_header--desktop .dropdown--user.dropdown--open-on-hover:hover .dropdown-toggle, .c_header .dropdown--user.open .dropdown-toggle {
+    background: 0 0;
+    border-color: transparent;
+}
+
+.c_header.c_header--desktop .dropdown--open-on-hover:hover .dropdown-toggle, .c_header .dropdown--open-on-hover.open .dropdown-toggle {
+    background: rgba(20,23,28,.05);
+    border-color: rgba(20,23,28,.05);
+}
+
+.nav .dropdown--topics .dropdown-toggle {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 170px;
+}
+
+.nav .dropdown-toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #505763;
+    font-weight: 400;
+    height: 45px;
+    line-height: 20px;
+    padding: 12px 15px;
+    white-space: nowrap;
+}
+
+.nav .dropdown--topics .dropdown-toggle .udi {
+    color: #a1a7b3;
+    margin-right: 4px;
+}
+
+.udi {
+    vertical-align: -8%;
+}
+
+.udi {
+    font-family: udemyicons!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.nav .dropdown--topics .dropdown-menu {
+    width: 270px;
+    min-height: 560px;
+    padding: 0;
+}
+
+.nav .dropdown--open-on-hover .dropdown-menu {
+    border: none;
+    border-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-top: 1px solid #e8e9eb;
+    box-shadow: 0 4px 16px rgba(20,23,28,.25);
+    color: #505763;
+    font-size: 13px;
+    margin: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    max-width: calc(100vw - 30px);
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 15px;
+    text-align: left;
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 4px 16px rgba(20,23,28,.25);
+    background-clip: padding-box;
+}
+
+.h100p {
+    height: 100%;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.nav .dropdown--topics .dropdown-menu__list {
+    height: 100%;
+    padding: 16px 0;
+}
+
+.nav .dropdown--topics .dropdown-menu__list .menu__link a {
+    padding: 5px 15px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+}
+
+.nav .menu__link a:not(.btn) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #29303b;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 22px;
+    width: 100%;
+    position: relative;
+}
+
+.nav .menu__icon {
+    color: #a1a7b3;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.fx {
+    flex: 1;
+    min-width: 1px;
+}
+
+.nav .menu__arrow {
+    color: #a1a7b3;
+    font-size: 10px;
+    margin-right: -2px;
+    padding: 0;
+}
+
